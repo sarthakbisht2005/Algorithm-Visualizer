@@ -20,19 +20,19 @@ function Home() {
           </button>
         </div>
         <div className="hero-image">
-          <img src="/images/algorithm.png" alt="Graph illustration" />
+          <img src={process.env.PUBLIC_URL + "/images/algorithm.png"} alt="Graph illustration" />
         </div>
       </div>
 
       <div className="cards-container">
         <div className="card card-path" onClick={() => navigate("/pathfinding")}>
-          <img src="/images/graph.png" alt="Pathfinder" />
+          <img src={process.env.PUBLIC_URL + "/images/graph.png"} alt="Pathfinder" />
           <h3>Pathfinder</h3>
           <p>Visualize graph algorithms like Dijkstra, BFS, DFS</p>
         </div>
 
         <div className="card card-search" onClick={() => navigate("/searching")}>
-          <img src="/images/binary-search.png" alt="Searching" />
+          <img src={process.env.PUBLIC_URL + "/images/binary-search.png"} alt="Searching" />
           <h3>Searching Algorithms</h3>
           <p>
             Visualize efficient algorithms for finding items in sorted or unsorted lists.
@@ -40,12 +40,12 @@ function Home() {
         </div>
 
         <div className="card card-sort" onClick={() => navigate("/sorting")}>
-          <img src="/images/sort.png" alt="Sorting" />
+          <img src={process.env.PUBLIC_URL + "/images/sort.png"} alt="Sorting" />
           <h3>Sorting Algorithms</h3>
           <p>Compare and learn different sorting algorithms visually.</p>
         </div>
         <div className="card card-greedy" onClick={() => navigate("/greedy")}>
-          <img src="/images/greedy.jpg" alt="greedy" />
+          <img src={process.env.PUBLIC_URL + "/images/greedy.jpg"} alt="greedy" />
           <h3>Greedy Algorithms</h3>
           <p>Understand greedy algorithms with visualizations and examples.</p>
         </div>
